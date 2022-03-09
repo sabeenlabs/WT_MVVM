@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4454BBF4277073580026E561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BBF3277073580026E561 /* AppDelegate.swift */; };
+		4454BBF6277073580026E561 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BBF5277073580026E561 /* SceneDelegate.swift */; };
+		4454BBF8277073580026E561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BBF7277073580026E561 /* ViewController.swift */; };
+		4454BBFD2770735D0026E561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4454BBFC2770735D0026E561 /* Assets.xcassets */; };
+		4454BC002770735D0026E561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4454BBFE2770735D0026E561 /* LaunchScreen.storyboard */; };
+		4454BC09277073D80026E561 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC08277073D80026E561 /* APIEnvironment.swift */; };
+		4454BC0B27707E6B0026E561 /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC0A27707E6B0026E561 /* APIPath.swift */; };
+		4454BC0D27707F780026E561 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC0C27707F780026E561 /* APIHandler.swift */; };
+		4454BC0F27707FB80026E561 /* RequestHandler+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC0E27707FB80026E561 /* RequestHandler+Extension.swift */; };
+		4454BC1127707FDA0026E561 /* ResponseHandler+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC1027707FDA0026E561 /* ResponseHandler+Extension.swift */; };
+		4454BC14277080230026E561 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC13277080230026E561 /* Constants.swift */; };
+		4454BC16277080660026E561 /* APILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC15277080660026E561 /* APILoader.swift */; };
+		4454BC19277080C10026E561 /* WTStatusFail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC18277080C10026E561 /* WTStatusFail.swift */; };
+		4454BC1C277081340026E561 /* WTCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC1B277081340026E561 /* WTCommon.swift */; };
+		4454BC212770B72E0026E561 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4454BC202770B72E0026E561 /* Main_iPhone.storyboard */; };
+		4454BC232770B73A0026E561 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4454BC222770B73A0026E561 /* Main_iPad.storyboard */; };
+		4454BC282771AC630026E561 /* RegistrationRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC272771AC630026E561 /* RegistrationRequestHandler.swift */; };
+		4454BC2A2771B1030026E561 /* WTAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC292771B1030026E561 /* WTAuthorization.swift */; };
+		4454BC2D2771B23C0026E561 /* UserDefault+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC2C2771B23C0026E561 /* UserDefault+Extension.swift */; };
+		4454BC2F2771B4EE0026E561 /* WTAuthenticationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC2E2771B4EE0026E561 /* WTAuthenticationAPI.swift */; };
+		4454BC342771EFF00026E561 /* BG_layer.png in Resources */ = {isa = PBXBuildFile; fileRef = 4454BC332771EFEF0026E561 /* BG_layer.png */; };
+		4454BC372771FB720026E561 /* Font Awesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4454BC362771FB720026E561 /* Font Awesome.otf */; };
+		4454BC3B2772F0960026E561 /* WTCreateAccountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC3A2772F0950026E561 /* WTCreateAccountButton.swift */; };
+		9BAABAFAD894ED06916A3280 /* Pods_WTapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0F5B7ABD869B1CB69B1CD9 /* Pods_WTapp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4454BBF0277073580026E561 /* WTapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4454BBF3277073580026E561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4454BBF5277073580026E561 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4454BBF7277073580026E561 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4454BBFC2770735D0026E561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4454BBFF2770735D0026E561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4454BC012770735D0026E561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4454BC08277073D80026E561 /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
+		4454BC0A27707E6B0026E561 /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
+		4454BC0C27707F780026E561 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		4454BC0E27707FB80026E561 /* RequestHandler+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestHandler+Extension.swift"; sourceTree = "<group>"; };
+		4454BC1027707FDA0026E561 /* ResponseHandler+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResponseHandler+Extension.swift"; sourceTree = "<group>"; };
+		4454BC13277080230026E561 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4454BC15277080660026E561 /* APILoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILoader.swift; sourceTree = "<group>"; };
+		4454BC18277080C10026E561 /* WTStatusFail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTStatusFail.swift; sourceTree = "<group>"; };
+		4454BC1B277081340026E561 /* WTCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTCommon.swift; sourceTree = "<group>"; };
+		4454BC202770B72E0026E561 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		4454BC222770B73A0026E561 /* Main_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		4454BC272771AC630026E561 /* RegistrationRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRequestHandler.swift; sourceTree = "<group>"; };
+		4454BC292771B1030026E561 /* WTAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTAuthorization.swift; sourceTree = "<group>"; };
+		4454BC2C2771B23C0026E561 /* UserDefault+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Extension.swift"; sourceTree = "<group>"; };
+		4454BC2E2771B4EE0026E561 /* WTAuthenticationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTAuthenticationAPI.swift; sourceTree = "<group>"; };
+		4454BC332771EFEF0026E561 /* BG_layer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG_layer.png; sourceTree = "<group>"; };
+		4454BC362771FB720026E561 /* Font Awesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome.otf"; sourceTree = "<group>"; };
+		4454BC3A2772F0950026E561 /* WTCreateAccountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTCreateAccountButton.swift; sourceTree = "<group>"; };
+		628003547AFEC068A8FC82CD /* Pods-WTapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTapp.debug.xcconfig"; path = "Target Support Files/Pods-WTapp/Pods-WTapp.debug.xcconfig"; sourceTree = "<group>"; };
+		70DD9DC17252795AC226BA77 /* Pods-WTapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTapp.release.xcconfig"; path = "Target Support Files/Pods-WTapp/Pods-WTapp.release.xcconfig"; sourceTree = "<group>"; };
+		EF0F5B7ABD869B1CB69B1CD9 /* Pods_WTapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4454BBED277073580026E561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BAABAFAD894ED06916A3280 /* Pods_WTapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11FD822ADE0C7209327818F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF0F5B7ABD869B1CB69B1CD9 /* Pods_WTapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4454BBE7277073570026E561 = {
+			isa = PBXGroup;
+			children = (
+				4454BBF2277073580026E561 /* WTapp */,
+				4454BBF1277073580026E561 /* Products */,
+				FB0574B7EEF600C097D2A2E7 /* Pods */,
+				11FD822ADE0C7209327818F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4454BBF1277073580026E561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4454BBF0277073580026E561 /* WTapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4454BBF2277073580026E561 /* WTapp */ = {
+			isa = PBXGroup;
+			children = (
+				4454BBF3277073580026E561 /* AppDelegate.swift */,
+				4454BBF5277073580026E561 /* SceneDelegate.swift */,
+				4454BC242771A0480026E561 /* Controllers */,
+				4454BC1A2770811F0026E561 /* WTCommon */,
+				4454BC12277080170026E561 /* Constants */,
+				4454BC17277080B70026E561 /* Model */,
+				4454BC07277073840026E561 /* Networking */,
+				4454BC2B2771B2170026E561 /* Extensions */,
+				4454BC322771EFD20026E561 /* WTImages */,
+				4454BC352771F8EC0026E561 /* WTFonts */,
+				4454BC382772F0310026E561 /* Views */,
+				4454BC1F2770B71B0026E561 /* storyBoard */,
+				4454BBFC2770735D0026E561 /* Assets.xcassets */,
+				4454BBFE2770735D0026E561 /* LaunchScreen.storyboard */,
+				4454BC012770735D0026E561 /* Info.plist */,
+			);
+			path = WTapp;
+			sourceTree = "<group>";
+		};
+		4454BC07277073840026E561 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4454BC262771ABDB0026E561 /* API */,
+				4454BC252771ABC00026E561 /* RequestHandlers */,
+				4454BC08277073D80026E561 /* APIEnvironment.swift */,
+				4454BC0C27707F780026E561 /* APIHandler.swift */,
+				4454BC0E27707FB80026E561 /* RequestHandler+Extension.swift */,
+				4454BC1027707FDA0026E561 /* ResponseHandler+Extension.swift */,
+				4454BC15277080660026E561 /* APILoader.swift */,
+				4454BC0A27707E6B0026E561 /* APIPath.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4454BC12277080170026E561 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4454BC13277080230026E561 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4454BC17277080B70026E561 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4454BC18277080C10026E561 /* WTStatusFail.swift */,
+				4454BC292771B1030026E561 /* WTAuthorization.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4454BC1A2770811F0026E561 /* WTCommon */ = {
+			isa = PBXGroup;
+			children = (
+				4454BC1B277081340026E561 /* WTCommon.swift */,
+			);
+			path = WTCommon;
+			sourceTree = "<group>";
+		};
+		4454BC1F2770B71B0026E561 /* storyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				4454BC202770B72E0026E561 /* Main_iPhone.storyboard */,
+				4454BC222770B73A0026E561 /* Main_iPad.storyboard */,
+			);
+			path = storyBoard;
+			sourceTree = "<group>";
+		};
+		4454BC242771A0480026E561 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4454BBF7277073580026E561 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4454BC252771ABC00026E561 /* RequestHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				4454BC272771AC630026E561 /* RegistrationRequestHandler.swift */,
+			);
+			path = RequestHandlers;
+			sourceTree = "<group>";
+		};
+		4454BC262771ABDB0026E561 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4454BC2E2771B4EE0026E561 /* WTAuthenticationAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4454BC2B2771B2170026E561 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4454BC2C2771B23C0026E561 /* UserDefault+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4454BC322771EFD20026E561 /* WTImages */ = {
+			isa = PBXGroup;
+			children = (
+				4454BC332771EFEF0026E561 /* BG_layer.png */,
+			);
+			path = WTImages;
+			sourceTree = "<group>";
+		};
+		4454BC352771F8EC0026E561 /* WTFonts */ = {
+			isa = PBXGroup;
+			children = (
+				4454BC362771FB720026E561 /* Font Awesome.otf */,
+			);
+			path = WTFonts;
+			sourceTree = "<group>";
+		};
+		4454BC382772F0310026E561 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4454BC392772F03F0026E561 /* SubClasses */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4454BC392772F03F0026E561 /* SubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				4454BC3A2772F0950026E561 /* WTCreateAccountButton.swift */,
+			);
+			path = SubClasses;
+			sourceTree = "<group>";
+		};
+		FB0574B7EEF600C097D2A2E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				628003547AFEC068A8FC82CD /* Pods-WTapp.debug.xcconfig */,
+				70DD9DC17252795AC226BA77 /* Pods-WTapp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4454BBEF277073580026E561 /* WTapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4454BC042770735D0026E561 /* Build configuration list for PBXNativeTarget "WTapp" */;
+			buildPhases = (
+				40A50187F08294E9BDF7EC5D /* [CP] Check Pods Manifest.lock */,
+				4454BBEC277073580026E561 /* Sources */,
+				4454BBED277073580026E561 /* Frameworks */,
+				4454BBEE277073580026E561 /* Resources */,
+				3655B2F3150FE4AE25D3EC62 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WTapp;
+			productName = WTapp;
+			productReference = 4454BBF0277073580026E561 /* WTapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4454BBE8277073570026E561 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					4454BBEF277073580026E561 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 4454BBEB277073570026E561 /* Build configuration list for PBXProject "WTapp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4454BBE7277073570026E561;
+			productRefGroup = 4454BBF1277073580026E561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4454BBEF277073580026E561 /* WTapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4454BBEE277073580026E561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4454BC002770735D0026E561 /* LaunchScreen.storyboard in Resources */,
+				4454BC232770B73A0026E561 /* Main_iPad.storyboard in Resources */,
+				4454BBFD2770735D0026E561 /* Assets.xcassets in Resources */,
+				4454BC212770B72E0026E561 /* Main_iPhone.storyboard in Resources */,
+				4454BC342771EFF00026E561 /* BG_layer.png in Resources */,
+				4454BC372771FB720026E561 /* Font Awesome.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3655B2F3150FE4AE25D3EC62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WTapp/Pods-WTapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WTapp/Pods-WTapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WTapp/Pods-WTapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40A50187F08294E9BDF7EC5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WTapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4454BBEC277073580026E561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4454BC0F27707FB80026E561 /* RequestHandler+Extension.swift in Sources */,
+				4454BC1C277081340026E561 /* WTCommon.swift in Sources */,
+				4454BBF8277073580026E561 /* ViewController.swift in Sources */,
+				4454BC3B2772F0960026E561 /* WTCreateAccountButton.swift in Sources */,
+				4454BC282771AC630026E561 /* RegistrationRequestHandler.swift in Sources */,
+				4454BC0B27707E6B0026E561 /* APIPath.swift in Sources */,
+				4454BC2D2771B23C0026E561 /* UserDefault+Extension.swift in Sources */,
+				4454BBF4277073580026E561 /* AppDelegate.swift in Sources */,
+				4454BC2A2771B1030026E561 /* WTAuthorization.swift in Sources */,
+				4454BC0D27707F780026E561 /* APIHandler.swift in Sources */,
+				4454BC2F2771B4EE0026E561 /* WTAuthenticationAPI.swift in Sources */,
+				4454BC09277073D80026E561 /* APIEnvironment.swift in Sources */,
+				4454BC19277080C10026E561 /* WTStatusFail.swift in Sources */,
+				4454BBF6277073580026E561 /* SceneDelegate.swift in Sources */,
+				4454BC16277080660026E561 /* APILoader.swift in Sources */,
+				4454BC1127707FDA0026E561 /* ResponseHandler+Extension.swift in Sources */,
+				4454BC14277080230026E561 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4454BBFE2770735D0026E561 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4454BBFF2770735D0026E561 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4454BC022770735D0026E561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4454BC032770735D0026E561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4454BC052770735D0026E561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628003547AFEC068A8FC82CD /* Pods-WTapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WTapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main_iPhone;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.revelationlabs.WTapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4454BC062770735D0026E561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70DD9DC17252795AC226BA77 /* Pods-WTapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WTapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main_iPhone;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.revelationlabs.WTapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4454BBEB277073570026E561 /* Build configuration list for PBXProject "WTapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4454BC022770735D0026E561 /* Debug */,
+				4454BC032770735D0026E561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4454BC042770735D0026E561 /* Build configuration list for PBXNativeTarget "WTapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4454BC052770735D0026E561 /* Debug */,
+				4454BC062770735D0026E561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4454BBE8277073570026E561 /* Project object */;
+}

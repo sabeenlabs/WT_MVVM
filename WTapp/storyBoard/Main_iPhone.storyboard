@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ViewController" customModule="WTapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG_layer.png" translatesAutoresizingMaskIntoConstraints="NO" id="oPu-S2-zBq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WTLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ffP-hI-rNb">
+                                <rect key="frame" x="16" y="15" width="126" height="49"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2hM-xy-SqX">
+                                <rect key="frame" x="16" y="121" width="288" height="160"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVA-3b-DLB">
+                                <rect key="frame" x="0.0" y="409" width="320" height="71"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="ABP-Yv-iYN"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="By creating an account or logging in, you are agreeing to Winning Ticket’s ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="15" name="Avenir-Book"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Terms of Service">
+                                        <attributes>
+                                            <color key="NSColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="15" name="Avenir-Book"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                            <color key="NSUnderlineColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" and ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="15" name="Avenir-Book"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            <color key="NSUnderlineColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Privacy Policy">
+                                        <attributes>
+                                            <color key="NSColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="15" name="Avenir-Book"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                            <color key="NSUnderlineColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A3T-7I-CMc">
+                                <rect key="frame" x="0.0" y="360" width="320" height="41"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Hb3-jb-hOa"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Already have an account? ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="20" name="Avenir-Book"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Sign in">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14818000000000001" green="0.69203999999999999" blue="0.87061999999999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="20" name="Avenir-Black"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yd4-WG-zPz" customClass="WTCreateAccountButton" customModule="WTapp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="289" width="288" height="63"/>
+                                <color key="backgroundColor" red="0.37254901960784315" green="0.37254901960784315" blue="0.37254901960784315" alpha="0.44" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="KNM-pl-SPU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Create Account">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="22" name="Avenir-Heavy"/>
+                                                <real key="NSKern" value="0.050000000000000003"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="20" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="A3T-7I-CMc" secondAttribute="trailing" id="0hA-M4-cz2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oPu-S2-zBq" secondAttribute="trailing" id="2OB-Uz-wb6"/>
+                            <constraint firstItem="NVA-3b-DLB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="5be-Xq-f4j"/>
+                            <constraint firstAttribute="bottom" secondItem="oPu-S2-zBq" secondAttribute="bottom" id="AwY-3i-Nc5"/>
+                            <constraint firstItem="2hM-xy-SqX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="BBh-Vz-jw7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="NVA-3b-DLB" secondAttribute="bottom" id="Boe-5U-kci"/>
+                            <constraint firstItem="2hM-xy-SqX" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-39" id="DDP-63-y2c"/>
+                            <constraint firstItem="oPu-S2-zBq" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="ELi-md-zgb"/>
+                            <constraint firstItem="Yd4-WG-zPz" firstAttribute="top" secondItem="2hM-xy-SqX" secondAttribute="bottom" constant="8" symbolic="YES" id="QHh-iH-4rM"/>
+                            <constraint firstItem="ffP-hI-rNb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="TYB-Dc-xNO"/>
+                            <constraint firstItem="Yd4-WG-zPz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Y7a-gg-k5G"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Yd4-WG-zPz" secondAttribute="trailing" constant="16" id="ZYo-FM-zRC"/>
+                            <constraint firstItem="NVA-3b-DLB" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ZxP-KJ-Vqm"/>
+                            <constraint firstItem="A3T-7I-CMc" firstAttribute="top" secondItem="Yd4-WG-zPz" secondAttribute="bottom" constant="8" symbolic="YES" id="bIu-70-aGA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2hM-xy-SqX" secondAttribute="trailing" constant="16" id="d8B-pT-dJv"/>
+                            <constraint firstItem="2hM-xy-SqX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ffP-hI-rNb" secondAttribute="bottom" constant="20" id="dZd-Mr-vBK"/>
+                            <constraint firstItem="A3T-7I-CMc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mCw-18-i2I"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ffP-hI-rNb" secondAttribute="trailing" constant="178" id="p0s-eb-7jf"/>
+                            <constraint firstItem="NVA-3b-DLB" firstAttribute="top" secondItem="A3T-7I-CMc" secondAttribute="bottom" constant="8" symbolic="YES" id="pvm-2R-uZb"/>
+                            <constraint firstItem="oPu-S2-zBq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sLo-YH-6n6"/>
+                            <constraint firstItem="ffP-hI-rNb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="tyv-LU-qPy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createAccountButton" destination="Yd4-WG-zPz" id="6ul-dX-K4O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.75" y="83.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BG_layer.png" width="390" height="805"/>
+        <image name="WTLogo" width="126" height="49"/>
+    </resources>
+</document>
