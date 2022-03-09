@@ -30,6 +30,11 @@
 		4454BC342771EFF00026E561 /* BG_layer.png in Resources */ = {isa = PBXBuildFile; fileRef = 4454BC332771EFEF0026E561 /* BG_layer.png */; };
 		4454BC372771FB720026E561 /* Font Awesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4454BC362771FB720026E561 /* Font Awesome.otf */; };
 		4454BC3B2772F0960026E561 /* WTCreateAccountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC3A2772F0950026E561 /* WTCreateAccountButton.swift */; };
+		44F413B227D8BE2E003A61D9 /* welcomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F413B027D8BE2E003A61D9 /* welcomeCell.swift */; };
+		44F413B327D8BE2E003A61D9 /* welcomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F413B127D8BE2E003A61D9 /* welcomeCell.xib */; };
+		44F413B627D8C464003A61D9 /* WTArrowNextBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F413B527D8C463003A61D9 /* WTArrowNextBlue.swift */; };
+		44F413B827D90164003A61D9 /* WTEmptyTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F413B727D90164003A61D9 /* WTEmptyTitle.swift */; };
+		44F413BB27D91FEC003A61D9 /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F413BA27D91FEC003A61D9 /* NSMutableAttributedString+Extension.swift */; };
 		9BAABAFAD894ED06916A3280 /* Pods_WTapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0F5B7ABD869B1CB69B1CD9 /* Pods_WTapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +64,11 @@
 		4454BC332771EFEF0026E561 /* BG_layer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG_layer.png; sourceTree = "<group>"; };
 		4454BC362771FB720026E561 /* Font Awesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome.otf"; sourceTree = "<group>"; };
 		4454BC3A2772F0950026E561 /* WTCreateAccountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTCreateAccountButton.swift; sourceTree = "<group>"; };
+		44F413B027D8BE2E003A61D9 /* welcomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeCell.swift; sourceTree = "<group>"; };
+		44F413B127D8BE2E003A61D9 /* welcomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = welcomeCell.xib; sourceTree = "<group>"; };
+		44F413B527D8C463003A61D9 /* WTArrowNextBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTArrowNextBlue.swift; sourceTree = "<group>"; };
+		44F413B727D90164003A61D9 /* WTEmptyTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTEmptyTitle.swift; sourceTree = "<group>"; };
+		44F413BA27D91FEC003A61D9 /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		628003547AFEC068A8FC82CD /* Pods-WTapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTapp.debug.xcconfig"; path = "Target Support Files/Pods-WTapp/Pods-WTapp.debug.xcconfig"; sourceTree = "<group>"; };
 		70DD9DC17252795AC226BA77 /* Pods-WTapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTapp.release.xcconfig"; path = "Target Support Files/Pods-WTapp/Pods-WTapp.release.xcconfig"; sourceTree = "<group>"; };
 		EF0F5B7ABD869B1CB69B1CD9 /* Pods_WTapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,7 +234,8 @@
 		4454BC382772F0310026E561 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4454BC392772F03F0026E561 /* SubClasses */,
+				44F413B427D8C343003A61D9 /* common */,
+				44F413AF27D8BDA7003A61D9 /* storyBoardEntry */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,8 +244,36 @@
 			isa = PBXGroup;
 			children = (
 				4454BC3A2772F0950026E561 /* WTCreateAccountButton.swift */,
+				44F413B527D8C463003A61D9 /* WTArrowNextBlue.swift */,
+				44F413B727D90164003A61D9 /* WTEmptyTitle.swift */,
 			);
 			path = SubClasses;
+			sourceTree = "<group>";
+		};
+		44F413AF27D8BDA7003A61D9 /* storyBoardEntry */ = {
+			isa = PBXGroup;
+			children = (
+				44F413B027D8BE2E003A61D9 /* welcomeCell.swift */,
+				44F413B127D8BE2E003A61D9 /* welcomeCell.xib */,
+			);
+			path = storyBoardEntry;
+			sourceTree = "<group>";
+		};
+		44F413B427D8C343003A61D9 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				44F413B927D91FD9003A61D9 /* extension */,
+				4454BC392772F03F0026E561 /* SubClasses */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		44F413B927D91FD9003A61D9 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				44F413BA27D91FEC003A61D9 /* NSMutableAttributedString+Extension.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 		FB0574B7EEF600C097D2A2E7 /* Pods */ = {
@@ -311,6 +350,7 @@
 				4454BBFD2770735D0026E561 /* Assets.xcassets in Resources */,
 				4454BC212770B72E0026E561 /* Main_iPhone.storyboard in Resources */,
 				4454BC342771EFF00026E561 /* BG_layer.png in Resources */,
+				44F413B327D8BE2E003A61D9 /* welcomeCell.xib in Resources */,
 				4454BC372771FB720026E561 /* Font Awesome.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +404,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F413B627D8C464003A61D9 /* WTArrowNextBlue.swift in Sources */,
+				44F413B827D90164003A61D9 /* WTEmptyTitle.swift in Sources */,
 				4454BC0F27707FB80026E561 /* RequestHandler+Extension.swift in Sources */,
 				4454BC1C277081340026E561 /* WTCommon.swift in Sources */,
 				4454BBF8277073580026E561 /* ViewController.swift in Sources */,
@@ -373,6 +415,7 @@
 				4454BC2D2771B23C0026E561 /* UserDefault+Extension.swift in Sources */,
 				4454BBF4277073580026E561 /* AppDelegate.swift in Sources */,
 				4454BC2A2771B1030026E561 /* WTAuthorization.swift in Sources */,
+				44F413BB27D91FEC003A61D9 /* NSMutableAttributedString+Extension.swift in Sources */,
 				4454BC0D27707F780026E561 /* APIHandler.swift in Sources */,
 				4454BC2F2771B4EE0026E561 /* WTAuthenticationAPI.swift in Sources */,
 				4454BC09277073D80026E561 /* APIEnvironment.swift in Sources */,
@@ -380,6 +423,7 @@
 				4454BBF6277073580026E561 /* SceneDelegate.swift in Sources */,
 				4454BC16277080660026E561 /* APILoader.swift in Sources */,
 				4454BC1127707FDA0026E561 /* ResponseHandler+Extension.swift in Sources */,
+				44F413B227D8BE2E003A61D9 /* welcomeCell.swift in Sources */,
 				4454BC14277080230026E561 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
