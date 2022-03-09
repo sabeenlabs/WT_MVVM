@@ -37,5 +37,7 @@
 	<string>Main_iPad</string>
 	<key>UIMainStoryboardFile~iphone</key>
 	<string>Main_iPhone</string>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <true/>
 </dict>
 </plist>
