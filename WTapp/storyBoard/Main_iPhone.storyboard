@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Font Awesome.otf">
+            <string>FontAwesome5Free-Solid</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -153,11 +158,159 @@
                         <outlet property="privacy" destination="NVA-3b-DLB" id="Nls-p2-7C2"/>
                         <outlet property="signIn" destination="A3T-7I-CMc" id="nv7-Rg-jPX"/>
                         <outlet property="welcomeTable" destination="2hM-xy-SqX" id="Jad-cs-Ipw"/>
+                        <segue destination="L6A-s9-Uel" kind="presentation" identifier="gotoSignIn" modalPresentationStyle="fullScreen" id="DYO-Un-Ld3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="33.75" y="83.75"/>
+        </scene>
+        <!--Log In-->
+        <scene sceneID="J3u-qq-67r">
+            <objects>
+                <viewController id="L6A-s9-Uel" customClass="WTLogIn" customModule="WTapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fay-G0-wYr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG_layer.png" translatesAutoresizingMaskIntoConstraints="NO" id="GOa-ni-ep9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dtE-oI-SoF">
+                                <rect key="frame" x="0.0" y="409" width="320" height="71"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="UPS-7m-Yvc"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="By creating an account or logging in, you are agreeing to Winning Ticket’s ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="15" name="Avenir-Book"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Terms of Service">
+                                        <attributes>
+                                            <color key="NSColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="15" name="Avenir-Book"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                            <color key="NSUnderlineColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" and ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="15" name="Avenir-Book"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            <color key="NSUnderlineColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Privacy Policy">
+                                        <attributes>
+                                            <color key="NSColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="15" name="Avenir-Book"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                            <color key="NSUnderlineColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WTLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MNS-sF-NZS">
+                                <rect key="frame" x="16" y="15" width="126" height="49"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za3-fa-l3S">
+                                <rect key="frame" x="16" y="91" width="288" height="44"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Sign You In" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hV-na-2JG">
+                                <rect key="frame" x="16" y="120" width="288" height="46.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q8C-Ni-6yW" customClass="WTTextFieldStyling" customModule="WTapp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="174" width="288" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.71372549019999998" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aog-DC-qtd"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TX3-Rk-sIx" customClass="WTTextFieldStyling" customModule="WTapp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="220" width="288" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.71372549019999998" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8YC-3P-kSd"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXA-tM-RJ2" customClass="WTCheckBoxButton" customModule="WTapp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="275" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="hxU-EI-gxv"/>
+                                    <constraint firstAttribute="height" constant="35" id="r4H-ng-gev"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome5Free-Solid" family="Font Awesome 5 Free" pointSize="25"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kdh-kv-2CO"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kdh-kv-2CO" firstAttribute="trailing" secondItem="TX3-Rk-sIx" secondAttribute="trailing" constant="16" id="1Bn-kg-UUk"/>
+                            <constraint firstItem="GOa-ni-ep9" firstAttribute="top" secondItem="fay-G0-wYr" secondAttribute="top" id="3pP-QW-H2D"/>
+                            <constraint firstItem="GOa-ni-ep9" firstAttribute="bottom" secondItem="fay-G0-wYr" secondAttribute="bottom" id="4Rm-SD-ZTe"/>
+                            <constraint firstItem="TX3-Rk-sIx" firstAttribute="top" secondItem="q8C-Ni-6yW" secondAttribute="bottom" constant="6" id="7oz-kE-z7e"/>
+                            <constraint firstItem="q8C-Ni-6yW" firstAttribute="trailing" secondItem="TX3-Rk-sIx" secondAttribute="trailing" id="7zN-uU-z9x"/>
+                            <constraint firstItem="TX3-Rk-sIx" firstAttribute="leading" secondItem="Kdh-kv-2CO" secondAttribute="leading" constant="16" id="IIM-Jm-KZE"/>
+                            <constraint firstItem="dtE-oI-SoF" firstAttribute="trailing" secondItem="Kdh-kv-2CO" secondAttribute="trailing" id="Ikh-vm-aHD"/>
+                            <constraint firstItem="q8C-Ni-6yW" firstAttribute="leading" secondItem="TX3-Rk-sIx" secondAttribute="leading" id="RF2-uV-1Sz"/>
+                            <constraint firstItem="dtE-oI-SoF" firstAttribute="leading" secondItem="Kdh-kv-2CO" secondAttribute="leading" id="Ska-Sh-whl"/>
+                            <constraint firstItem="dtE-oI-SoF" firstAttribute="bottom" secondItem="Kdh-kv-2CO" secondAttribute="bottom" id="TBK-5A-5aw"/>
+                            <constraint firstItem="hXA-tM-RJ2" firstAttribute="leading" secondItem="TX3-Rk-sIx" secondAttribute="leading" id="TNI-Gg-2HQ"/>
+                            <constraint firstItem="8hV-na-2JG" firstAttribute="leading" secondItem="Za3-fa-l3S" secondAttribute="leading" id="WJf-bj-t5l"/>
+                            <constraint firstItem="GOa-ni-ep9" firstAttribute="trailing" secondItem="Kdh-kv-2CO" secondAttribute="trailing" id="YFi-lk-k0A"/>
+                            <constraint firstItem="hXA-tM-RJ2" firstAttribute="top" secondItem="TX3-Rk-sIx" secondAttribute="bottom" constant="15" id="aRD-lc-qJx"/>
+                            <constraint firstItem="Kdh-kv-2CO" firstAttribute="trailing" secondItem="Za3-fa-l3S" secondAttribute="trailing" constant="16" id="aUy-l4-hGX"/>
+                            <constraint firstItem="8hV-na-2JG" firstAttribute="top" secondItem="Za3-fa-l3S" secondAttribute="bottom" constant="-15" id="gca-Ay-ZuL"/>
+                            <constraint firstItem="MNS-sF-NZS" firstAttribute="leading" secondItem="Kdh-kv-2CO" secondAttribute="leading" constant="16" id="hd7-Cj-bw6"/>
+                            <constraint firstItem="8hV-na-2JG" firstAttribute="trailing" secondItem="Za3-fa-l3S" secondAttribute="trailing" id="nQf-Re-57i"/>
+                            <constraint firstItem="MNS-sF-NZS" firstAttribute="top" secondItem="Kdh-kv-2CO" secondAttribute="top" constant="15" id="nn5-NT-3ZI"/>
+                            <constraint firstItem="TX3-Rk-sIx" firstAttribute="centerY" secondItem="fay-G0-wYr" secondAttribute="centerY" id="okq-d9-Ig0"/>
+                            <constraint firstItem="Za3-fa-l3S" firstAttribute="leading" secondItem="Kdh-kv-2CO" secondAttribute="leading" constant="16" id="rPL-DC-hnM"/>
+                            <constraint firstItem="GOa-ni-ep9" firstAttribute="leading" secondItem="Kdh-kv-2CO" secondAttribute="leading" id="u5h-9H-K7y"/>
+                            <constraint firstItem="Za3-fa-l3S" firstAttribute="top" secondItem="MNS-sF-NZS" secondAttribute="bottom" constant="27" id="ub3-pU-rj2"/>
+                            <constraint firstItem="Kdh-kv-2CO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MNS-sF-NZS" secondAttribute="trailing" constant="178" id="zXu-Xt-BXw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3iH-MT-9EP"/>
+                    <connections>
+                        <outlet property="email" destination="q8C-Ni-6yW" id="etj-qb-cri"/>
+                        <outlet property="password" destination="TX3-Rk-sIx" id="pge-0E-os5"/>
+                        <outlet property="rememberMe" destination="hXA-tM-RJ2" id="XUN-3j-B3V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="969-KN-b9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956" y="84"/>
         </scene>
     </scenes>
     <resources>

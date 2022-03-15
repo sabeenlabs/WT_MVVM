@@ -30,6 +30,9 @@
 		4454BC342771EFF00026E561 /* BG_layer.png in Resources */ = {isa = PBXBuildFile; fileRef = 4454BC332771EFEF0026E561 /* BG_layer.png */; };
 		4454BC372771FB720026E561 /* Font Awesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4454BC362771FB720026E561 /* Font Awesome.otf */; };
 		4454BC3B2772F0960026E561 /* WTCreateAccountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454BC3A2772F0950026E561 /* WTCreateAccountButton.swift */; };
+		44B9AC1227E05C7D0019D87A /* WTLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9AC1127E05C7D0019D87A /* WTLogIn.swift */; };
+		44B9AC1427E062E80019D87A /* WTCheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9AC1327E062E80019D87A /* WTCheckBoxButton.swift */; };
+		44B9AC1627E065770019D87A /* WTTextFieldStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9AC1527E065770019D87A /* WTTextFieldStyling.swift */; };
 		44F413B227D8BE2E003A61D9 /* welcomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F413B027D8BE2E003A61D9 /* welcomeCell.swift */; };
 		44F413B327D8BE2E003A61D9 /* welcomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F413B127D8BE2E003A61D9 /* welcomeCell.xib */; };
 		44F413B627D8C464003A61D9 /* WTArrowNextBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F413B527D8C463003A61D9 /* WTArrowNextBlue.swift */; };
@@ -64,6 +67,9 @@
 		4454BC332771EFEF0026E561 /* BG_layer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG_layer.png; sourceTree = "<group>"; };
 		4454BC362771FB720026E561 /* Font Awesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome.otf"; sourceTree = "<group>"; };
 		4454BC3A2772F0950026E561 /* WTCreateAccountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTCreateAccountButton.swift; sourceTree = "<group>"; };
+		44B9AC1127E05C7D0019D87A /* WTLogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTLogIn.swift; sourceTree = "<group>"; };
+		44B9AC1327E062E80019D87A /* WTCheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTCheckBoxButton.swift; sourceTree = "<group>"; };
+		44B9AC1527E065770019D87A /* WTTextFieldStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTTextFieldStyling.swift; sourceTree = "<group>"; };
 		44F413B027D8BE2E003A61D9 /* welcomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeCell.swift; sourceTree = "<group>"; };
 		44F413B127D8BE2E003A61D9 /* welcomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = welcomeCell.xib; sourceTree = "<group>"; };
 		44F413B527D8C463003A61D9 /* WTArrowNextBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTArrowNextBlue.swift; sourceTree = "<group>"; };
@@ -187,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				4454BBF7277073580026E561 /* ViewController.swift */,
+				44B9AC1127E05C7D0019D87A /* WTLogIn.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,6 +253,8 @@
 				4454BC3A2772F0950026E561 /* WTCreateAccountButton.swift */,
 				44F413B527D8C463003A61D9 /* WTArrowNextBlue.swift */,
 				44F413B727D90164003A61D9 /* WTEmptyTitle.swift */,
+				44B9AC1327E062E80019D87A /* WTCheckBoxButton.swift */,
+				44B9AC1527E065770019D87A /* WTTextFieldStyling.swift */,
 			);
 			path = SubClasses;
 			sourceTree = "<group>";
@@ -405,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44F413B627D8C464003A61D9 /* WTArrowNextBlue.swift in Sources */,
+				44B9AC1627E065770019D87A /* WTTextFieldStyling.swift in Sources */,
 				44F413B827D90164003A61D9 /* WTEmptyTitle.swift in Sources */,
 				4454BC0F27707FB80026E561 /* RequestHandler+Extension.swift in Sources */,
 				4454BC1C277081340026E561 /* WTCommon.swift in Sources */,
@@ -412,6 +422,7 @@
 				4454BC3B2772F0960026E561 /* WTCreateAccountButton.swift in Sources */,
 				4454BC282771AC630026E561 /* RegistrationRequestHandler.swift in Sources */,
 				4454BC0B27707E6B0026E561 /* APIPath.swift in Sources */,
+				44B9AC1427E062E80019D87A /* WTCheckBoxButton.swift in Sources */,
 				4454BC2D2771B23C0026E561 /* UserDefault+Extension.swift in Sources */,
 				4454BBF4277073580026E561 /* AppDelegate.swift in Sources */,
 				4454BC2A2771B1030026E561 /* WTAuthorization.swift in Sources */,
@@ -420,6 +431,7 @@
 				4454BC2F2771B4EE0026E561 /* WTAuthenticationAPI.swift in Sources */,
 				4454BC09277073D80026E561 /* APIEnvironment.swift in Sources */,
 				4454BC19277080C10026E561 /* WTStatusFail.swift in Sources */,
+				44B9AC1227E05C7D0019D87A /* WTLogIn.swift in Sources */,
 				4454BBF6277073580026E561 /* SceneDelegate.swift in Sources */,
 				4454BC16277080660026E561 /* APILoader.swift in Sources */,
 				4454BC1127707FDA0026E561 /* ResponseHandler+Extension.swift in Sources */,

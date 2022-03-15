@@ -17,14 +17,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="303"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8i-8b-jag">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8i-8b-jag">
                         <rect key="frame" x="16" y="39" width="288" height="44"/>
                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="32"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winning Ticket" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-a0-Pdb">
-                        <rect key="frame" x="16" y="68" width="288" height="47"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winning Ticket" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-a0-Pdb">
+                        <rect key="frame" x="16" y="68" width="288" height="46.5"/>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="34"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -41,13 +41,13 @@
                                 <buttonConfiguration key="configuration" style="plain"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter player code" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFQ-ap-Lj9">
-                                <rect key="frame" x="10" y="10" width="192" height="31"/>
+                                <rect key="frame" x="10" y="10" width="192" height="31.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attending an event and been given a player code? Enter it here." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jek-gD-8mN">
-                                <rect key="frame" x="10" y="70" width="284" height="46"/>
+                                <rect key="frame" x="10" y="70" width="284" height="46.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -85,7 +85,7 @@
                     <constraint firstItem="s8i-8b-jag" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="39" id="NUw-sL-1Bs"/>
                     <constraint firstItem="CN6-a0-Pdb" firstAttribute="trailing" secondItem="s8i-8b-jag" secondAttribute="trailing" id="Ycu-yZ-mDJ"/>
                     <constraint firstItem="CN6-a0-Pdb" firstAttribute="top" secondItem="s8i-8b-jag" secondAttribute="bottom" constant="-15" id="fdE-As-l8F"/>
-                    <constraint firstItem="Od7-3D-Jk0" firstAttribute="top" secondItem="CN6-a0-Pdb" secondAttribute="bottom" constant="40" id="mu0-xD-lHX"/>
+                    <constraint firstItem="Od7-3D-Jk0" firstAttribute="top" secondItem="CN6-a0-Pdb" secondAttribute="bottom" constant="40.5" id="sPH-ud-7Na"/>
                     <constraint firstItem="s8i-8b-jag" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vTQ-He-5CQ"/>
                 </constraints>
             </tableViewCellContentView>

@@ -106,6 +106,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //MARK: - TextFieldDeligate
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
         if URL.path == NSURL.init(string: APIPath.SignIn)?.path {
+            self.performSegue(withIdentifier: "gotoSignIn", sender: nil)
             return false
         }
         return true
