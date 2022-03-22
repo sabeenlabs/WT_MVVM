@@ -38,6 +38,14 @@
 		44F413B627D8C464003A61D9 /* WTArrowNextBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F413B527D8C463003A61D9 /* WTArrowNextBlue.swift */; };
 		44F413B827D90164003A61D9 /* WTEmptyTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F413B727D90164003A61D9 /* WTEmptyTitle.swift */; };
 		44F413BB27D91FEC003A61D9 /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F413BA27D91FEC003A61D9 /* NSMutableAttributedString+Extension.swift */; };
+		44FE796427E36C6200CBD713 /* WTNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FE796327E36C6200CBD713 /* WTNextButton.swift */; };
+		44FE796627E36E1D00CBD713 /* WTBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FE796527E36E1D00CBD713 /* WTBackButton.swift */; };
+		44FE796827E3796C00CBD713 /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FE796727E3796C00CBD713 /* ViewController+Extensions.swift */; };
+		44FE796D27E37A8600CBD713 /* WTTermsOfServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FE796B27E37A8600CBD713 /* WTTermsOfServiceController.swift */; };
+		44FE796E27E37A8600CBD713 /* WTTermsOfServiceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44FE796C27E37A8600CBD713 /* WTTermsOfServiceController.xib */; };
+		44FE797127E37ACD00CBD713 /* WTPrivacyPolicyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FE796F27E37ACD00CBD713 /* WTPrivacyPolicyController.swift */; };
+		44FE797227E37ACD00CBD713 /* WTPrivacyPolicyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44FE797027E37ACD00CBD713 /* WTPrivacyPolicyController.xib */; };
+		44FE797427E37F5200CBD713 /* Logo_WT.png in Resources */ = {isa = PBXBuildFile; fileRef = 44FE797327E37F5200CBD713 /* Logo_WT.png */; };
 		9BAABAFAD894ED06916A3280 /* Pods_WTapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0F5B7ABD869B1CB69B1CD9 /* Pods_WTapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +83,14 @@
 		44F413B527D8C463003A61D9 /* WTArrowNextBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTArrowNextBlue.swift; sourceTree = "<group>"; };
 		44F413B727D90164003A61D9 /* WTEmptyTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTEmptyTitle.swift; sourceTree = "<group>"; };
 		44F413BA27D91FEC003A61D9 /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		44FE796327E36C6200CBD713 /* WTNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTNextButton.swift; sourceTree = "<group>"; };
+		44FE796527E36E1D00CBD713 /* WTBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTBackButton.swift; sourceTree = "<group>"; };
+		44FE796727E3796C00CBD713 /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
+		44FE796B27E37A8600CBD713 /* WTTermsOfServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTTermsOfServiceController.swift; sourceTree = "<group>"; };
+		44FE796C27E37A8600CBD713 /* WTTermsOfServiceController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WTTermsOfServiceController.xib; sourceTree = "<group>"; };
+		44FE796F27E37ACD00CBD713 /* WTPrivacyPolicyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTPrivacyPolicyController.swift; sourceTree = "<group>"; };
+		44FE797027E37ACD00CBD713 /* WTPrivacyPolicyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WTPrivacyPolicyController.xib; sourceTree = "<group>"; };
+		44FE797327E37F5200CBD713 /* Logo_WT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_WT.png; sourceTree = "<group>"; };
 		628003547AFEC068A8FC82CD /* Pods-WTapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTapp.debug.xcconfig"; path = "Target Support Files/Pods-WTapp/Pods-WTapp.debug.xcconfig"; sourceTree = "<group>"; };
 		70DD9DC17252795AC226BA77 /* Pods-WTapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTapp.release.xcconfig"; path = "Target Support Files/Pods-WTapp/Pods-WTapp.release.xcconfig"; sourceTree = "<group>"; };
 		EF0F5B7ABD869B1CB69B1CD9 /* Pods_WTapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +210,8 @@
 			children = (
 				4454BBF7277073580026E561 /* ViewController.swift */,
 				44B9AC1127E05C7D0019D87A /* WTLogIn.swift */,
+				44FE796A27E37A5800CBD713 /* PrivacyPolicy */,
+				44FE796927E37A3B00CBD713 /* TermsOfService */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,6 +236,8 @@
 			isa = PBXGroup;
 			children = (
 				4454BC2C2771B23C0026E561 /* UserDefault+Extension.swift */,
+				44F413BA27D91FEC003A61D9 /* NSMutableAttributedString+Extension.swift */,
+				44FE796727E3796C00CBD713 /* ViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -226,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				4454BC332771EFEF0026E561 /* BG_layer.png */,
+				44FE797327E37F5200CBD713 /* Logo_WT.png */,
 			);
 			path = WTImages;
 			sourceTree = "<group>";
@@ -255,6 +276,8 @@
 				44F413B727D90164003A61D9 /* WTEmptyTitle.swift */,
 				44B9AC1327E062E80019D87A /* WTCheckBoxButton.swift */,
 				44B9AC1527E065770019D87A /* WTTextFieldStyling.swift */,
+				44FE796327E36C6200CBD713 /* WTNextButton.swift */,
+				44FE796527E36E1D00CBD713 /* WTBackButton.swift */,
 			);
 			path = SubClasses;
 			sourceTree = "<group>";
@@ -271,18 +294,27 @@
 		44F413B427D8C343003A61D9 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				44F413B927D91FD9003A61D9 /* extension */,
 				4454BC392772F03F0026E561 /* SubClasses */,
 			);
 			path = common;
 			sourceTree = "<group>";
 		};
-		44F413B927D91FD9003A61D9 /* extension */ = {
+		44FE796927E37A3B00CBD713 /* TermsOfService */ = {
 			isa = PBXGroup;
 			children = (
-				44F413BA27D91FEC003A61D9 /* NSMutableAttributedString+Extension.swift */,
+				44FE796B27E37A8600CBD713 /* WTTermsOfServiceController.swift */,
+				44FE796C27E37A8600CBD713 /* WTTermsOfServiceController.xib */,
 			);
-			path = extension;
+			path = TermsOfService;
+			sourceTree = "<group>";
+		};
+		44FE796A27E37A5800CBD713 /* PrivacyPolicy */ = {
+			isa = PBXGroup;
+			children = (
+				44FE796F27E37ACD00CBD713 /* WTPrivacyPolicyController.swift */,
+				44FE797027E37ACD00CBD713 /* WTPrivacyPolicyController.xib */,
+			);
+			path = PrivacyPolicy;
 			sourceTree = "<group>";
 		};
 		FB0574B7EEF600C097D2A2E7 /* Pods */ = {
@@ -357,10 +389,13 @@
 				4454BC002770735D0026E561 /* LaunchScreen.storyboard in Resources */,
 				4454BC232770B73A0026E561 /* Main_iPad.storyboard in Resources */,
 				4454BBFD2770735D0026E561 /* Assets.xcassets in Resources */,
+				44FE797427E37F5200CBD713 /* Logo_WT.png in Resources */,
 				4454BC212770B72E0026E561 /* Main_iPhone.storyboard in Resources */,
 				4454BC342771EFF00026E561 /* BG_layer.png in Resources */,
 				44F413B327D8BE2E003A61D9 /* welcomeCell.xib in Resources */,
 				4454BC372771FB720026E561 /* Font Awesome.otf in Resources */,
+				44FE796E27E37A8600CBD713 /* WTTermsOfServiceController.xib in Resources */,
+				44FE797227E37ACD00CBD713 /* WTPrivacyPolicyController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,23 +450,28 @@
 			files = (
 				44F413B627D8C464003A61D9 /* WTArrowNextBlue.swift in Sources */,
 				44B9AC1627E065770019D87A /* WTTextFieldStyling.swift in Sources */,
+				44FE797127E37ACD00CBD713 /* WTPrivacyPolicyController.swift in Sources */,
 				44F413B827D90164003A61D9 /* WTEmptyTitle.swift in Sources */,
 				4454BC0F27707FB80026E561 /* RequestHandler+Extension.swift in Sources */,
 				4454BC1C277081340026E561 /* WTCommon.swift in Sources */,
 				4454BBF8277073580026E561 /* ViewController.swift in Sources */,
+				44FE796427E36C6200CBD713 /* WTNextButton.swift in Sources */,
 				4454BC3B2772F0960026E561 /* WTCreateAccountButton.swift in Sources */,
 				4454BC282771AC630026E561 /* RegistrationRequestHandler.swift in Sources */,
 				4454BC0B27707E6B0026E561 /* APIPath.swift in Sources */,
 				44B9AC1427E062E80019D87A /* WTCheckBoxButton.swift in Sources */,
 				4454BC2D2771B23C0026E561 /* UserDefault+Extension.swift in Sources */,
 				4454BBF4277073580026E561 /* AppDelegate.swift in Sources */,
+				44FE796827E3796C00CBD713 /* ViewController+Extensions.swift in Sources */,
 				4454BC2A2771B1030026E561 /* WTAuthorization.swift in Sources */,
 				44F413BB27D91FEC003A61D9 /* NSMutableAttributedString+Extension.swift in Sources */,
+				44FE796627E36E1D00CBD713 /* WTBackButton.swift in Sources */,
 				4454BC0D27707F780026E561 /* APIHandler.swift in Sources */,
 				4454BC2F2771B4EE0026E561 /* WTAuthenticationAPI.swift in Sources */,
 				4454BC09277073D80026E561 /* APIEnvironment.swift in Sources */,
 				4454BC19277080C10026E561 /* WTStatusFail.swift in Sources */,
 				44B9AC1227E05C7D0019D87A /* WTLogIn.swift in Sources */,
+				44FE796D27E37A8600CBD713 /* WTTermsOfServiceController.swift in Sources */,
 				4454BBF6277073580026E561 /* SceneDelegate.swift in Sources */,
 				4454BC16277080660026E561 /* APILoader.swift in Sources */,
 				4454BC1127707FDA0026E561 /* ResponseHandler+Extension.swift in Sources */,

@@ -17,6 +17,8 @@ struct APIPath {
     //Sign
     static var SignIn: String { return "\(environment.baseURL(route: "/api/v1"))/users/sign_in"}
     static var SignUp: String { return "\(environment.baseURL(route: "/api/v1"))/users"}
+    static var terms: String { return "\(environment.baseURL(route: "/api/v1"))/terms"}
+    static var privacy: String { return "\(environment.baseURL(route: "/api/v1"))/privacyPolicy"}
 }
 
 enum ServerStatus: String {

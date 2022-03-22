@@ -15,6 +15,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var signIn: UITextView!
     @IBOutlet weak var privacy: UITextView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        setNeedsStatusBarAppearanceUpdate()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,13 +33,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func setAttibuteLink() {
-        signIn.delegate = self
-        signIn.isSelectable = true
-        signIn.dataDetectorTypes = .link
+        setupTextView(textVW: signIn)
         signIn.attributedText = signIn.attributedText?
-            .replace(placeholder: "Sign in", with: "Sign in", url: APIPath.SignIn, fontName: UIFont.init(name: "Avenir-Black", size: 20.0))
+            .replace(placeholder: "Sign in", with: "Sign in", url: APIPath.SignIn, fontName: UIFont.init(name: "Avenir-Black", size: 20.0), isUnderLine: false)
         let linkAttributes: [NSAttributedString.Key : Any] = [NSAttributedString.Key.foregroundColor: UIColor(red: 0.15, green: 0.69, blue: 0.87, alpha: 1.00)]
         signIn.linkTextAttributes = linkAttributes
+        setupTextView(textVW: privacy)
+        privacy.attributedText = privacy.attributedText?.replace(placeholder: "Terms of Service", with: "Terms of Service", url: APIPath.terms, fontName: UIFont.init(name: "Avenir-Book", size: 15), isUnderLine: true)
+        privacy.attributedText = privacy.attributedText?.replace(placeholder: "Privacy Policy", with: "Privacy Policy", url: APIPath.privacy, fontName: UIFont.init(name: "Avenir-Book", size: 15), isUnderLine: true)
+        let attributesLink: [NSAttributedString.Key : Any] = [NSAttributedString.Key.foregroundColor: privacy.textColor as Any,NSAttributedString.Key.underlineColor: privacy.textColor as Any]
+        privacy.linkTextAttributes = attributesLink
+    }
+    
+    func setupTextView(textVW: UITextView) {
+        textVW.delegate = self
+        textVW.isSelectable = true
+        textVW.dataDetectorTypes = .link
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -107,6 +120,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
         if URL.path == NSURL.init(string: APIPath.SignIn)?.path {
             self.performSegue(withIdentifier: "gotoSignIn", sender: nil)
+            return false
+        } else if URL.path == NSURL.init(string: APIPath.terms)?.path {
+            let progressVC = WTTermsOfServiceController.loadFromNib()
+            progressVC.modalPresentationStyle = .fullScreen
+            self.present(progressVC, animated: true, completion: nil)
+            return false
+        } else if URL.path == NSURL.init(string: APIPath.privacy)?.path {
+            let privacyVC = WTPrivacyPolicyController.loadFromNib()
+            privacyVC.modalPresentationStyle = .fullScreen
+            self.present(privacyVC , animated: true, completion: nil)
             return false
         }
         return true

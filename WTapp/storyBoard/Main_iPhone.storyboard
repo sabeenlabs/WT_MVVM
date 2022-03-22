@@ -73,7 +73,17 @@
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="Terms of Service">
+                                    <fragment content="Term">
+                                        <attributes>
+                                            <color key="NSColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="15" name="Avenir-Book"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                            <color key="NSUnderlineColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="s of Service">
                                         <attributes>
                                             <color key="NSColor" red="0.67298999999999998" green="0.67298999999999998" blue="0.67298999999999998" alpha="0.60282000000000002" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="15" name="Avenir-Book"/>
@@ -271,10 +281,45 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toY-0W-pRm">
+                                <rect key="frame" x="59" y="275" width="99" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="OBy-9P-2Xc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuO-hi-9lh">
+                                <rect key="frame" x="168" y="275" width="142" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Forgot Password?">
+                                    <color key="titleColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peu-gK-ixc" customClass="WTNextButton" customModule="WTapp" customModuleProvider="target">
+                                <rect key="frame" x="193" y="338" width="111" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="cac-7d-v17"/>
+                                    <constraint firstAttribute="width" constant="111" id="fM7-4T-BV5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cP8-Z8-5j2" customClass="WTBackButton" customModule="WTapp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="338" width="111" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="jSK-4i-iX3"/>
+                                    <constraint firstAttribute="width" constant="111" id="utm-7Z-nXz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Kdh-kv-2CO"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="MuO-hi-9lh" firstAttribute="bottom" secondItem="toY-0W-pRm" secondAttribute="bottom" id="0ak-Tr-y5i"/>
                             <constraint firstItem="Kdh-kv-2CO" firstAttribute="trailing" secondItem="TX3-Rk-sIx" secondAttribute="trailing" constant="16" id="1Bn-kg-UUk"/>
                             <constraint firstItem="GOa-ni-ep9" firstAttribute="top" secondItem="fay-G0-wYr" secondAttribute="top" id="3pP-QW-H2D"/>
                             <constraint firstItem="GOa-ni-ep9" firstAttribute="bottom" secondItem="fay-G0-wYr" secondAttribute="bottom" id="4Rm-SD-ZTe"/>
@@ -282,19 +327,29 @@
                             <constraint firstItem="q8C-Ni-6yW" firstAttribute="trailing" secondItem="TX3-Rk-sIx" secondAttribute="trailing" id="7zN-uU-z9x"/>
                             <constraint firstItem="TX3-Rk-sIx" firstAttribute="leading" secondItem="Kdh-kv-2CO" secondAttribute="leading" constant="16" id="IIM-Jm-KZE"/>
                             <constraint firstItem="dtE-oI-SoF" firstAttribute="trailing" secondItem="Kdh-kv-2CO" secondAttribute="trailing" id="Ikh-vm-aHD"/>
+                            <constraint firstItem="MuO-hi-9lh" firstAttribute="leading" secondItem="toY-0W-pRm" secondAttribute="trailing" constant="10" id="M4A-hK-p0r"/>
+                            <constraint firstItem="toY-0W-pRm" firstAttribute="leading" secondItem="hXA-tM-RJ2" secondAttribute="trailing" constant="8" symbolic="YES" id="Ql7-6m-oDm"/>
                             <constraint firstItem="q8C-Ni-6yW" firstAttribute="leading" secondItem="TX3-Rk-sIx" secondAttribute="leading" id="RF2-uV-1Sz"/>
                             <constraint firstItem="dtE-oI-SoF" firstAttribute="leading" secondItem="Kdh-kv-2CO" secondAttribute="leading" id="Ska-Sh-whl"/>
                             <constraint firstItem="dtE-oI-SoF" firstAttribute="bottom" secondItem="Kdh-kv-2CO" secondAttribute="bottom" id="TBK-5A-5aw"/>
                             <constraint firstItem="hXA-tM-RJ2" firstAttribute="leading" secondItem="TX3-Rk-sIx" secondAttribute="leading" id="TNI-Gg-2HQ"/>
+                            <constraint firstItem="peu-gK-ixc" firstAttribute="top" secondItem="MuO-hi-9lh" secondAttribute="bottom" constant="30" id="VYM-eW-Dwu"/>
                             <constraint firstItem="8hV-na-2JG" firstAttribute="leading" secondItem="Za3-fa-l3S" secondAttribute="leading" id="WJf-bj-t5l"/>
                             <constraint firstItem="GOa-ni-ep9" firstAttribute="trailing" secondItem="Kdh-kv-2CO" secondAttribute="trailing" id="YFi-lk-k0A"/>
                             <constraint firstItem="hXA-tM-RJ2" firstAttribute="top" secondItem="TX3-Rk-sIx" secondAttribute="bottom" constant="15" id="aRD-lc-qJx"/>
                             <constraint firstItem="Kdh-kv-2CO" firstAttribute="trailing" secondItem="Za3-fa-l3S" secondAttribute="trailing" constant="16" id="aUy-l4-hGX"/>
+                            <constraint firstItem="MuO-hi-9lh" firstAttribute="top" secondItem="toY-0W-pRm" secondAttribute="top" id="bUn-g0-pRO"/>
+                            <constraint firstItem="toY-0W-pRm" firstAttribute="top" secondItem="hXA-tM-RJ2" secondAttribute="top" id="ce6-bd-V1E"/>
                             <constraint firstItem="8hV-na-2JG" firstAttribute="top" secondItem="Za3-fa-l3S" secondAttribute="bottom" constant="-15" id="gca-Ay-ZuL"/>
+                            <constraint firstItem="cP8-Z8-5j2" firstAttribute="leading" secondItem="Kdh-kv-2CO" secondAttribute="leading" constant="16" id="hXP-n6-Dz0"/>
                             <constraint firstItem="MNS-sF-NZS" firstAttribute="leading" secondItem="Kdh-kv-2CO" secondAttribute="leading" constant="16" id="hd7-Cj-bw6"/>
+                            <constraint firstItem="MuO-hi-9lh" firstAttribute="centerY" secondItem="toY-0W-pRm" secondAttribute="centerY" id="hvW-xJ-CCr"/>
+                            <constraint firstItem="Kdh-kv-2CO" firstAttribute="trailing" secondItem="peu-gK-ixc" secondAttribute="trailing" constant="16" id="lYl-ci-Yfq"/>
                             <constraint firstItem="8hV-na-2JG" firstAttribute="trailing" secondItem="Za3-fa-l3S" secondAttribute="trailing" id="nQf-Re-57i"/>
                             <constraint firstItem="MNS-sF-NZS" firstAttribute="top" secondItem="Kdh-kv-2CO" secondAttribute="top" constant="15" id="nn5-NT-3ZI"/>
                             <constraint firstItem="TX3-Rk-sIx" firstAttribute="centerY" secondItem="fay-G0-wYr" secondAttribute="centerY" id="okq-d9-Ig0"/>
+                            <constraint firstItem="cP8-Z8-5j2" firstAttribute="top" secondItem="peu-gK-ixc" secondAttribute="top" id="orb-EZ-Uqw"/>
+                            <constraint firstItem="Kdh-kv-2CO" firstAttribute="trailing" secondItem="MuO-hi-9lh" secondAttribute="trailing" constant="10" id="puC-8V-UBs"/>
                             <constraint firstItem="Za3-fa-l3S" firstAttribute="leading" secondItem="Kdh-kv-2CO" secondAttribute="leading" constant="16" id="rPL-DC-hnM"/>
                             <constraint firstItem="GOa-ni-ep9" firstAttribute="leading" secondItem="Kdh-kv-2CO" secondAttribute="leading" id="u5h-9H-K7y"/>
                             <constraint firstItem="Za3-fa-l3S" firstAttribute="top" secondItem="MNS-sF-NZS" secondAttribute="bottom" constant="27" id="ub3-pU-rj2"/>
@@ -303,7 +358,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="3iH-MT-9EP"/>
                     <connections>
+                        <outlet property="Privacy" destination="dtE-oI-SoF" id="bUM-NC-Qs3"/>
+                        <outlet property="backTapped" destination="cP8-Z8-5j2" id="srR-8v-7IX"/>
                         <outlet property="email" destination="q8C-Ni-6yW" id="etj-qb-cri"/>
+                        <outlet property="nextTapped" destination="peu-gK-ixc" id="Yn2-Tv-LBk"/>
                         <outlet property="password" destination="TX3-Rk-sIx" id="pge-0E-os5"/>
                         <outlet property="rememberMe" destination="hXA-tM-RJ2" id="XUN-3j-B3V"/>
                     </connections>
